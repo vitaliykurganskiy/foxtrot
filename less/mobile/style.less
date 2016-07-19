@@ -1,0 +1,305 @@
+.wrapper {
+    overflow: hidden;
+    position: relative;
+//    border: 10px solid green;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    color: #f12727;
+}
+
+/* CONTACTS */
+
+.contacts__wrapper {
+    position: absolute;
+    top: 450px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.contacts {
+    
+    .contacts__email {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+        
+        .icon-mail {
+            font-size: 20px;
+            &:before {
+                margin: 0 18px 0 0;
+                padding: 0;
+                width: 30px;
+                height: 40px;
+            }
+        }
+        
+        .email {
+            color: #40475a;
+            font-family: "proxima semibold";
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+    }
+    
+    .contacts__phone {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+        
+        .icon-phone {
+            font-size: 32px;
+            
+            &:before {
+                margin: 0 18px 0 0;
+                padding: 0;
+                width: 30px;
+                height: 40px;
+            }
+        }
+        
+        .phone {
+            color: #40475a;
+            font-family: "proxima semibold";
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 1.5px;
+        }
+
+    }
+}
+
+/* MENU */
+
+.menu {
+    
+    .menu__toggle {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 22px;
+        padding: 33px 30px 35px 30px;
+        background-color: #fff;
+        
+        span {
+            display: block;
+            background-color: #ff2828;
+            width: 30px;
+            height: 4px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    .menu__list {
+        z-index: 1000;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 140px 0 90px 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        background-color: #222325;
+        
+        .close_mnu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 33px 30px 35px 30px;
+        }
+        
+        .menu__item {
+            
+            a {
+                display: block;
+                height: 90px;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: "proxima bold";
+                line-height: 90px;
+                
+                &:hover {
+                    background-color: #ff2828;
+                }
+                
+            }
+        }        
+    }
+}
+
+/* LOGO */
+
+.logo__wrapper {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-left: auto;
+    text-align: center;
+    
+    .logo {
+        &:after {
+            content: url(../images/logo2.png);
+            display: block;
+            margin-top: 5px;          
+        }        
+    }
+}
+
+/* MAIN */
+
+.main__wrapper {
+    position: relative;
+    width: 100%;
+    height: 1205px;
+    background: url(../images/mobile-bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: #ccc;
+    margin-top: 325px;
+}
+
+/* MAIN-TEXT */
+
+.main-text__wraper {
+    position: absolute;
+    top: 296px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.main-text__header {    
+    text-align: center;
+    
+    h1 {
+        text-transform: uppercase;
+        font-family: "proxima semibold";
+        font-size: 45px;
+        color: #40475a;
+        margin: 0;
+    }
+    
+    span {
+        font-family: "proxima semibold";
+        font-size: 35px;
+        color: #f12727;
+        white-space: nowrap;
+    }
+}
+
+.main-text__content {
+    font-family: "proxima regular";
+    max-width: 400px;
+    margin: 55px auto;
+    padding: 0 2px;
+    
+    p {
+        text-align: center;
+        line-height: 2em;
+        font-size: 16px;
+        color: #40475a;
+    }
+}
+
+
+.main-text__button {
+    text-align: center;
+    
+    .button {
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        padding: 21px 68px;
+        text-transform: uppercase;
+        font-family: "proxima semibold";
+        font-size: 12px;
+        color: #40475a;
+        letter-spacing: 1.5px;
+        z-index: 2000;
+        
+        &:after {
+            content: ''; 
+            position: absolute;
+            right: 26px; top: 24px;
+            border: 4px solid transparent;
+            border-left: 4px solid #dfe1e3;
+        }
+    }
+}
+
+/* PRESENTATION */
+
+.presentation__wrapper {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+}
+
+.presentation {
+    position: relative;
+    
+    .dashed {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/dashed.png) no-repeat center 73%;
+    }
+    
+    .presentation__items {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        max-width: 360px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        .item {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            flex: 1 1 50%;
+            
+            .icons {
+                font-size: 40px;
+            }
+            
+            .item__text {
+                text-align: center;
+                margin-top: 20px;
+                font-family: "proxima semibold";
+                font-size: 13px;
+                color: #40475a;
+            }
+        }        
+    }
+}
+
+
+
+.nextblock {
+    width: 100%;
+    background-color: #f5f6f7;
+    height: 1000px;
+}
